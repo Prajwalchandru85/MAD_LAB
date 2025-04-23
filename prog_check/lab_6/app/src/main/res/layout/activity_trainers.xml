@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".TrainersActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_marginTop="30dp"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/menu"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/heading"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/trainers"/>
+
+    <ListView
+        android:id="@+id/trainer_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

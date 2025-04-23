@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LAB_8_3</string>
+    <string name="add_movie">Add movie</string>
+    <string name="movie_name">Movie Name</string>
+    <string name="year">Year</string>
+    <string name="review">Review</string>
+    <string name="rating">Rating</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:stretchColumns="1">
+
+    <TableRow>
+        <TextView
+            android:text="@string/movie_name"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/movieName"
+            android:padding="8dp"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/year"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/movieYear"
+            android:padding="8dp"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/rating"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_margin="8dp"
+            android:numStars="5"
+            android:stepSize="1"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/review"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/movieReview"
+            android:padding="8dp"/>
+    </TableRow>
+</TableLayout>

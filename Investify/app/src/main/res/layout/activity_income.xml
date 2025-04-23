@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".IncomeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Monthly Income"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/incomeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Monthly Income"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Monthly Budget"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/budgetEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Monthly Budget"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"/>
+
+</LinearLayout>

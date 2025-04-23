@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- EditText for URL input -->
+    <EditText
+        android:id="@+id/urlInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter URL"
+        android:inputType="textUri"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Button to visit the URL -->
+    <Button
+        android:id="@+id/visitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visit URL"
+        android:layout_below="@id/urlInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- WebView to display the webpage -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/visitButton"/>
+</RelativeLayout>

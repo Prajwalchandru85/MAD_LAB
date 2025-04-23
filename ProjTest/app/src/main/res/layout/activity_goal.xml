@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GoalActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/goalTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Your Investment Goal"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/goalDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose the primary goal for your investment"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/goalTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/goalRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/goalDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/retirementRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retirement"
+            android:textSize="16sp"
+            android:paddingVertical="8dp" />
+
+        <RadioButton
+            android:id="@+id/homeRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home Purchase"
+            android:textSize="16sp"
+            android:paddingVertical="8dp" />
+
+        <RadioButton
+            android:id="@+id/carRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Car Purchase"
+            android:textSize="16sp"
+            android:paddingVertical="8dp" />
+
+        <RadioButton
+            android:id="@+id/educationRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Education"
+            android:textSize="16sp"
+            android:paddingVertical="8dp" />
+
+        <RadioButton
+            android:id="@+id/goldRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gold Investment"
+            android:textSize="16sp"
+            android:paddingVertical="8dp" />
+
+        <RadioButton
+            android:id="@+id/wealthRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wealth Creation"
+            android:textSize="16sp"
+            android:paddingVertical="8dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/goalRadioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

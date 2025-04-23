@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Display Screen -->
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#EEE"
+        android:gravity="right|center_vertical"
+        android:padding="16dp"
+        android:text="0"
+        android:textSize="32sp"
+        android:textColor="#000"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Calculator Buttons in Grid -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:layout_margin="4dp">
+
+        <!-- Row 1 -->
+        <Button android:text="C" android:id="@+id/btnClear"/>
+        <Button android:text="⌫" android:id="@+id/btnBackspace"/>
+        <Button android:text="%" android:id="@+id/btnPercent"/>
+        <Button android:text="÷" android:id="@+id/btnDivide"/>
+
+        <!-- Row 2 -->
+        <Button android:text="7" android:id="@+id/btn7"/>
+        <Button android:text="8" android:id="@+id/btn8"/>
+        <Button android:text="9" android:id="@+id/btn9"/>
+        <Button android:text="×" android:id="@+id/btnMultiply"/>
+
+        <!-- Row 3 -->
+        <Button android:text="4" android:id="@+id/btn4"/>
+        <Button android:text="5" android:id="@+id/btn5"/>
+        <Button android:text="6" android:id="@+id/btn6"/>
+        <Button android:text="-" android:id="@+id/btnMinus"/>
+
+        <!-- Row 4 -->
+        <Button android:text="1" android:id="@+id/btn1"/>
+        <Button android:text="2" android:id="@+id/btn2"/>
+        <Button android:text="3" android:id="@+id/btn3"/>
+        <Button android:text="+" android:id="@+id/btnPlus"/>
+
+        <!-- Row 5 -->
+        <Button android:text="0" android:id="@+id/btn0" android:layout_columnSpan="2"/>
+        <Button android:text="." android:id="@+id/btnDot"/>
+        <Button android:text="=" android:id="@+id/btnEquals"/>
+
+    </GridLayout>
+
+</LinearLayout>

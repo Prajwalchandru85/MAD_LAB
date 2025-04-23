@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LAB_8_5</string>
+    <string name="add_field">Add Field</string>
+    <string name="save">Save</string>
+    <string name="value">Value</string>
+    <string name="key">Key</string>
+</resources>

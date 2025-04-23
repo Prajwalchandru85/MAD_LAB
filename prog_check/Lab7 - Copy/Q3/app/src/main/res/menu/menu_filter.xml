@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/search"
+        android:title="Search Keywords"/>
+    <item android:id="@+id/highlight"
+        android:title="Highlight Text"/>
+    <item android:id="@+id/sort"
+        android:title="Sort Content"/>
+</menu>

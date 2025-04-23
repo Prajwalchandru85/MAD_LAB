@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Extreme Fitness</string>
+    <string name="welcome">Welcome to Extreme Fitness!!</string>
+    <string name="workout">Workout Plans</string>
+    <string name="trainers">Trainers</string>
+    <string name="membership">Membership</string>
+    <string name="membership_spinner">All Membership Plans Below</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about_us">About Us</string>
+    <string name="homepage">Homepage</string>
+</resources>
